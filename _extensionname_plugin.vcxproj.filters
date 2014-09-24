@@ -64,7 +64,7 @@
     <ClCompile Include="_extensionname_plugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StdAfx.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Build_MSVC\Qt\Win32\Debug\Moc\moc__extensionname__dialog.cpp">
@@ -123,7 +123,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StdAfx.h">
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
@@ -135,7 +135,7 @@
     <ClInclude Include="..\..\BrainStim\plugininterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CustomScriptObjects.h">
+    <ClInclude Include="customscriptobjects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Build_MSVC\Qt\$(PlatformName)\$(ConfigurationName)\GeneratedFiles\ui__extensionname__dialog.h">
@@ -160,7 +160,7 @@
     <ResourceCompile Include="_extensionname_plugin.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="licenseHeader.licenseheader" />
+    <None Include="licenseheader.licenseheader" />
     <None Include="_extensionname_.json" />
   </ItemGroup>
 </Project>
