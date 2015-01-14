@@ -1,5 +1,5 @@
 //_extensionname_
-//Copyright (C) 2014  _authorname_
+//Copyright (C) 2015  _authorname_
 //
 //This file is part of BrainStim.
 //BrainStim is free software: you can redistribute it and/or modify
