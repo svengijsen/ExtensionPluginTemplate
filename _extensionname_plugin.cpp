@@ -28,7 +28,7 @@ _extensionname_Plugin::_extensionname_Plugin(QObject *parent)
 {
 	_extensionname_Object = new _extensionname_(parent);
 	_extensionname_DiagObject = new _extensionname__Dialog();	
-	strPluginInformation = QString(PLUGIN_INTERNAL_NAME) + " Plugin" + "(v" + PLUGIN_FILE_VERSION_STRING + ")" + " by " + PLUGIN_AUTHOR_NAME;
+	strPluginInformation = QString(PLUGIN_INTERNAL_NAME) + " Plugin" + "(v" + PLUGIN_FILE_VERSION_STRING + ")";// +" by " + PLUGIN_AUTHOR_NAME;
 	strPluginInternalName = PLUGIN_INTERNAL_NAME;
 }
 
