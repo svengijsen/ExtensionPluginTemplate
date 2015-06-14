@@ -147,9 +147,15 @@
     <PostBuildEvent>
       <Command>echo POSTBUILDSTEP for $(ProjectName)
 
-xcopy "$(TargetPath)" "$(BRAINSTIM_HOME)\Install\plugins\$(Platform)\" /i /d /y
+xcopy "$(TargetPath)" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
 if errorlevel 1 goto BuildEventFailed
-xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(BRAINSTIM_HOME)\Install\Plugins\$(Platform)\" /i /d /y
+
+xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
+if errorlevel 1 goto BuildEventFailed
+
+SET PATH=%PATH%;$(QTDIR)\bin
+CD $(BRAINSTIM_HOME)\Install\
+$(BRAINSTIM_HOME)\Install\UpdateMngr_$(Platform)_$(Configuration) -p "$(ProjectDir)build\$(Platform)\$(Configuration)\$(ProjectName)_$(Platform)_$(Configuration).ini" install -o
 if errorlevel 1 goto BuildEventFailed
 
 goto BuildEventOK
@@ -213,9 +219,15 @@ echo POSTBUILDSTEP for $(ProjectName) COMPLETED OK
     <PostBuildEvent>
       <Command>echo POSTBUILDSTEP for $(ProjectName)
 
-xcopy "$(TargetPath)" "$(BRAINSTIM_HOME)\Install\plugins\$(Platform)\" /i /d /y
+xcopy "$(TargetPath)" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
 if errorlevel 1 goto BuildEventFailed
-xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(BRAINSTIM_HOME)\Install\Plugins\$(Platform)\" /i /d /y
+
+xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
+if errorlevel 1 goto BuildEventFailed
+
+SET PATH=%PATH%;$(QTDIR)\bin
+CD $(BRAINSTIM_HOME)\Install\
+$(BRAINSTIM_HOME)\Install\UpdateMngr_$(Platform)_$(Configuration) -p "$(ProjectDir)build\$(Platform)\$(Configuration)\$(ProjectName)_$(Platform)_$(Configuration).ini" install -o
 if errorlevel 1 goto BuildEventFailed
 
 goto BuildEventOK
@@ -276,9 +288,15 @@ echo POSTBUILDSTEP for $(ProjectName) COMPLETED OK
     <PostBuildEvent>
       <Command>echo POSTBUILDSTEP for $(ProjectName)
 
-xcopy "$(TargetPath)" "$(BRAINSTIM_HOME)\Install\plugins\$(Platform)\" /i /d /y
+xcopy "$(TargetPath)" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
 if errorlevel 1 goto BuildEventFailed
-xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(BRAINSTIM_HOME)\Install\Plugins\$(Platform)\" /i /d /y
+
+xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
+if errorlevel 1 goto BuildEventFailed
+
+SET PATH=%PATH%;$(QTDIR)\bin
+CD $(BRAINSTIM_HOME)\Install\
+$(BRAINSTIM_HOME)\Install\UpdateMngr_$(Platform)_$(Configuration) -p "$(ProjectDir)build\$(Platform)\$(Configuration)\$(ProjectName)_$(Platform)_$(Configuration).ini" install -o
 if errorlevel 1 goto BuildEventFailed
 
 goto BuildEventOK
@@ -341,9 +359,15 @@ echo POSTBUILDSTEP for $(ProjectName) COMPLETED OK
     <PostBuildEvent>
       <Command>echo POSTBUILDSTEP for $(ProjectName)
 
-xcopy "$(TargetPath)" "$(BRAINSTIM_HOME)\Install\plugins\$(Platform)\" /i /d /y
+xcopy "$(TargetPath)" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
 if errorlevel 1 goto BuildEventFailed
-xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(BRAINSTIM_HOME)\Install\Plugins\$(Platform)\" /i /d /y
+
+xcopy "$(ProjectDir)resources\$(ProjectName)_$(Platform)_$(Configuration).ini" "$(ProjectDir)\build\$(Platform)\$(Configuration)\" /i /d /y
+if errorlevel 1 goto BuildEventFailed
+
+SET PATH=%PATH%;$(QTDIR)\bin
+CD $(BRAINSTIM_HOME)\Install\
+$(BRAINSTIM_HOME)\Install\UpdateMngr_$(Platform)_$(Configuration) -p "$(ProjectDir)build\$(Platform)\$(Configuration)\$(ProjectName)_$(Platform)_$(Configuration).ini" install -o
 if errorlevel 1 goto BuildEventFailed
 
 goto BuildEventOK

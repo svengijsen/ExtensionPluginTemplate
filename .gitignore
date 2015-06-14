@@ -3,3 +3,4 @@
 *.suo
 *.vcxproj.user
 Makefile._extensionname_*
+build/
