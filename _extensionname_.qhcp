@@ -3,16 +3,16 @@
 <!--doc-version-qhelp-begin-->
 <!-- Please do not edit the below line(s) manually, see DocumentVersioning.qs (15119101013),BrainStim version 1.0.0.1, Plugin version 1.0.0.1-->
   <assistant>
-		<title><Rename> plugin v1.0.0.1</title>
-    <applicationIcon><Rename>/images/logo.jpg</applicationIcon>
-    <cacheDirectory>svengijsen/BrainStim/Plugins/<Rename></cacheDirectory>
-    <startPage>qthelp://com.svengijsen.brainstim/doc/plugins/<Rename>/index.html</startPage>
+		<title>_extensionname_ plugin v1.0.0.1</title>
+    <applicationIcon>_extensionname_/images/logo.jpg</applicationIcon>
+    <cacheDirectory>svengijsen/BrainStim/Plugins/_extensionname_</cacheDirectory>
+    <startPage>qthelp://com.svengijsen.brainstim/doc/plugins/_extensionname_/index.html</startPage>
     <aboutMenuText>
-        <text>About <Rename></text>
+        <text>About _extensionname_</text>
     </aboutMenuText>
     <aboutDialog>
-        <file><Rename>/additional/about.txt</file>
-        <icon><Rename>/images/logo.jpg</icon>
+        <file>_extensionname_/additional/about.txt</file>
+        <icon>_extensionname_/images/logo.jpg</icon>
     </aboutDialog>
     <enableDocumentationManager>false</enableDocumentationManager>
     <enableAddressBar>false</enableAddressBar>
@@ -21,12 +21,12 @@
   <docFiles>
   	<generate>
     	<file>
-      	<input><Rename>.qhp</input>
-        <output><Rename>.qch</output>
+      	<input>_extensionname_.qhp</input>
+        <output>_extensionname_.qch</output>
       </file>
     </generate>
     <register>
-    	<file><Rename>.qch</file>
+    	<file>_extensionname_.qch</file>
     </register>
   </docFiles>
 	</QHelpCollectionProject>

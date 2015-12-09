@@ -2,18 +2,18 @@
 <QtHelpProject version="1.0">
 <!--doc-version-qhelp-namespace-begin-->
 <!-- Please do not edit the below line(s) manually, see DocumentVersioning.qs (15119101013),BrainStim version 1.0.0.1, Plugin version 1.0.0.1-->
-	<namespace>com.trolltech.brainstim.plugins.<Rename></namespace>
+	<namespace>com.trolltech.brainstim.plugins._extensionname_</namespace>
 <!--doc-version-qhelp-namespace-end-->
 	<virtualFolder>doc</virtualFolder>
 	<filterSection>
 		<toc>
 <!--doc-version-qhelp-toc-root-begin-->
 <!-- Please do not edit the below line(s) manually, see DocumentVersioning.qs (15119101013),BrainStim version 1.0.0.1, Plugin version 1.0.0.1-->
-			<section title="Plugin: <Rename>" ref="./<Rename>/index.html">
+			<section title="Plugin: _extensionname_" ref="./_extensionname_/index.html">
 <!--doc-version-qhelp-toc-root-end-->
 <!--doc-version-qhelp-toc-scriptclass-begin-->
 <!-- Please do not edit the below line(s) manually, see DocumentVersioning.qs (15119101013),BrainStim version 1.0.0.1, Plugin version 1.0.0.1-->
-				<section title="<Rename> &lt;Script Class&gt;"  ref="./<Rename>/Doxygen/index.html">
+				<section title="_extensionname_ &lt;Script Class&gt;"  ref="./_extensionname_/Doxygen/index.html">
 <!--doc-version-qhelp-toc-scriptclass-end-->
 				</section>
 			</section>    
@@ -21,7 +21,7 @@
 		<keywords>
 <!--doc-version-qhelp-keywords-begin-->
 <!-- Please do not edit the below line(s) manually, see DocumentVersioning.qs (15119101013),BrainStim version 1.0.0.1, Plugin version 1.0.0.1-->
-			<keyword name="<Rename>" ref="./<Rename>/index.html"/>
+			<keyword name="_extensionname_" ref="./_extensionname_/index.html"/>
 <!--doc-version-qhelp-keywords-end-->
 		</keywords>
 		<files>
@@ -32,10 +32,10 @@
 			<file>bootstrap/js/*</file>
 			<file>google-code-prettify/*</file>
 			<file>css/*</file>
-			<file><Rename>/*</file>
-			<file><Rename>/additional/*</file>
-			<file><Rename>/images/*</file>
-			<file><Rename>/Doxygen/*</file>
+			<file>_extensionname_/*</file>
+			<file>_extensionname_/additional/*</file>
+			<file>_extensionname_/images/*</file>
+			<file>_extensionname_/Doxygen/*</file>
 <!--doc-version-qhelp-files-end-->
 		</files>
 	</filterSection>
