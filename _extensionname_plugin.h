@@ -53,6 +53,7 @@ private:
 	_extensionname__Dialog *_extensionname_DiagObject;
 
 public slots:
+	bool HasGUI() { return true; };
     bool ShowGUI();
 	bool IsCompatible() {return PluginInterface::IsCompatible();};// ExtensionInterface PluginInterface::IsCompatible();};
 	//QStringList GetAdditionalFileExtensions() {return (QStringList() << "_extensionname_ files (*._extensionname_);;");};

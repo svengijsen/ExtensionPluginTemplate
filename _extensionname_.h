@@ -41,7 +41,7 @@ public:
 	~_extensionname_();
 	_extensionname_(const _extensionname_& other ){Q_UNUSED(other);}//TODO fill in copy constructor, should be used for the Q_DECLARE_METATYPE macro
 
-	static QScriptValue ctor__extensionname(QScriptContext* context, QScriptEngine* engine);
+	static QScriptValue ctor__extensionname_(QScriptContext* context, QScriptEngine* engine);
 
 public slots:
 	bool makeThisAvailableInScript(QString strObjectScriptName = "", QObject *engine = NULL);//To make the objects (e.g. defined in a *.exml file) available in the script

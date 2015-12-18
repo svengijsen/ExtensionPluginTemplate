@@ -21,16 +21,16 @@
 #define _extensionname_DEFINES_H
 #include "maindefines.h"
 
-//Only edit the below!
-#define PLUGIN_FILE_VERSION_STRING_MAJOR			1
-#define PLUGIN_FILE_VERSION_STRING_MINOR			0
-#define PLUGIN_FILE_VERSION_STRING_REVISION			0
-#define PLUGIN_FILE_VERSION_STRING_BUILD			1
-#define PLUGIN_PRODUCT_VERSION_STRING_MAJOR			1
-#define PLUGIN_PRODUCT_VERSION_STRING_MINOR			0
-#define PLUGIN_PRODUCT_VERSION_STRING_REVISION		0
-#define PLUGIN_PRODUCT_VERSION_STRING_BUILD			1
-#define PLUGIN_LEGAL_COPYRIGHT						"Copyright (C) 2015"
+
+#define PLUGIN_FILE_VERSION_STRING_MAJOR	1   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_FILE_VERSION_STRING_MINOR	0   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_FILE_VERSION_STRING_REVISION	0   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_FILE_VERSION_STRING_BUILD	1   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_PRODUCT_VERSION_STRING_MAJOR	1   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_PRODUCT_VERSION_STRING_MINOR	0   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_PRODUCT_VERSION_STRING_REVISION	0   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_PRODUCT_VERSION_STRING_BUILD	1   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
+#define PLUGIN_LEGAL_COPYRIGHT	"Copyright (C) 2016"   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
 #define PLUGIN_AUTHOR_NAME							"_authorname_"
 #define PLUGIN_AUTHOR_EMAIL							"authoremail goes here"
 #define PLUGIN_COMPANY_NAME							"companyname goes here"
@@ -43,7 +43,7 @@
 #define PLUGIN_FULL_NAME							PLUGIN_INTERNAL_NAME "(v" PLUGIN_FILE_VERSION_STRING ")"
 #define PLUGIN_FILE_DESCRIPTION						"<_extensionname_ description goes here>"
 #define PLUGIN_INFORMATION							PLUGIN_INTERNAL_NAME " Plugin(v" PLUGIN_FILE_VERSION_STRING ")"
-#define PLUGIN_MAIN_PROGRAM_MINIMAL_VERSION			MAIN_PROGRAM_FILE_VERSION_STRING//Make sure to override the GetMinimalMainProgramVersion() function with this defined value when needed!
+#define PLUGIN_MAIN_PROGRAM_MINIMAL_VERSION	"1.1.0.1"   //Please do not edit this line manually, see PluginBinaryVersioning.qs (151216133113).
 //Only edit until here!
 
 

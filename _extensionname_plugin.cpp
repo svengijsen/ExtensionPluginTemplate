@@ -42,7 +42,7 @@ int _extensionname_Plugin::ConfigureScriptEngine(QScriptEngine &engine)
 {
 	QScriptValue _extensionname_Proto = engine.newQObject(_extensionname_Object);
 	engine.setDefaultPrototype(qMetaTypeId<_extensionname_*>(), _extensionname_Proto);
-	QScriptValue _extensionname_Ctor = engine.newFunction(_extensionname_::ctor__extensionname, _extensionname_Proto);
+	QScriptValue _extensionname_Ctor = engine.newFunction(_extensionname_::ctor__extensionname_, _extensionname_Proto);
 	engine.globalObject().setProperty(PLUGIN_SCRIPTOBJECT_NAME, _extensionname_Ctor);
 	int nMetaType = qRegisterMetaType<_extensionname_>(PLUGIN_SCRIPTOBJECT_CLASS);
 	//FinalizeScriptObjectScriptContext(engine, _extensionname_Object);
