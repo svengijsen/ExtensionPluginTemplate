@@ -35,7 +35,7 @@ for(nCounter=1;nCounter<=sBinairySteps;nCounter++)
 	{
 		ComponentName = "_extensionname_Plugin";		
 		Log("Component Name: " + ComponentName);
-		LastComponentVersion  = "1.0.0.1";
+		LastComponentVersion  = "1.1.0.1";
 		Log("Last Component Version: " + LastComponentVersion);
 		Log("\n");
 		fileDest = ComponentName + ".cfg";
@@ -50,8 +50,27 @@ for(nCounter=1;nCounter<=sBinairySteps;nCounter++)
 		changeSet[4][0] = preFix + "OUTPUT_DIRECTORY" + postFix;
 		changeSet[4][1] = "\"../_extensionname_\"";//"\"../References/Script/_extensionname_Plugin\"";
 		changeSet[5][0] = preFix + "INPUT" + postFix;
-		changeSet[5][1] = "../../_extensionname_/_extensionname_.h \\\n" +
-					  "../../_extensionname_/_extensionname_.cpp \\\n";
+		
+		var _sHeaderFilePath = "../../_extensionname_/_extensionname_.h";
+		var _sCFilePath = "../../_extensionname_/_extensionname_.cpp";
+		
+		//Do not edit the below block!
+		/////////////////////////////////////////////////////////////////////////////////////////
+		var fHeaderFilePath = new QFile(_sHeaderFilePath);
+		if(fHeaderFilePath.exists()==false)
+		{
+			fHeaderFilePath.setFileName("../../ExtensionPluginTemplate/_extensionname_.h");
+			if(fHeaderFilePath.exists())//Do we still have the Template here...?
+			{
+				_sHeaderFilePath = "../../ExtensionPluginTemplate/_extensionname_.h";
+				_sCFilePath = "../../ExtensionPluginTemplate/_extensionname_.cpp";
+			}
+		}
+		fHeaderFilePath = null;
+		/////////////////////////////////////////////////////////////////////////////////////////
+		
+		changeSet[5][1] = _sHeaderFilePath + " \\\n" +
+					  _sCFilePath + " \\\n";
 		changeSet[6][0] = preFix + "QHP_NAMESPACE" + postFix;
 		changeSet[6][1] = "BrainStim.doxygen.Project";	
 		changeSet[7][0] = preFix + "PREDEFINED" + postFix; //see http://www.stack.nl/~dimitri/doxygen/preprocessing.html //see http://www.stack.nl/~dimitri/doxygen/preprocessing.html
